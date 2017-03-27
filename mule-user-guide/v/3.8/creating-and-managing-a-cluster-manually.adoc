@@ -191,8 +191,8 @@ Two nodes listening on port 5701:
 |`mule.cluster.quorumsize` | Enables you to define the minimum number of machines required in a cluster to remain in an operational state.
 |`mule.cluster.multicastenabled` |*(Boolean)* Enable/disable multicast. Set to `false` if using fixed IP addresses for cluster node discovery (see option `mule.cluster.nodes` above). +
 If set to `true`, do not set IP addresses in `mule.cluster.nodes`.
-|`mule.cluster.multicastgroup` |Multicast group IP address to use.
-|`mule.cluster.multicastport` |Multicast port number to use.
+|`mule.cluster.multicastgroup` |Multicast group IP address to use. Default value: 224.2.2.3. Custom values may be between 224.0.0.0 and 239.255.255.255.
+|`mule.cluster.multicastport` |Multicast port number to use. Default value: 54327.
 | [[persistency-config]] `mule.cluster.jdbcstoreurl` | *Required only when storing persistent data*. +
 The JDBC URL for connection to the database
 |`mule.cluster.jdbcstoreusername` |*Required only when storing persistent data*. +
